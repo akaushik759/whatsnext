@@ -1,0 +1,77 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+/* For the square boxes*/
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: none;
+}
+.square-service-block{
+    position:relative;
+    overflow:hidden;
+    margin:15px auto;
+    }
+.square-service-block a {
+  background-color: #808080;
+  border-radius: 5px;
+  display: block;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+}
+.square-service-block a:hover{
+  background-color: rgba(231, 76, 60, 0.8);
+  border-radius: 5px;
+}
+
+.ssb-icon {
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+h2.ssb-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+}
+
+/* For the bootstrap Nav bar and Footer */
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      /*position: absolute;
+      bottom: 0;
+      width: 100%;*/
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }

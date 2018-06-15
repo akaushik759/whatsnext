@@ -22,6 +22,7 @@
     //This function changes the color of the choices upon clickng from white to green and stores them in an array called choiceCodes
     function changeColor(buttonName)
     {
+        //document.getElementsByClassName("square-service-block").style.backgroundColor="#FFFFFF";
         document.getElementById(buttonName).style.backgroundColor="green";
         choiceCodes.push(buttonName);
     }
@@ -29,6 +30,12 @@
     //This function clears all the choices, turns their color from green to white and also clears the localStorage of any choice f stored
     function clearPreferences()
     {
+        var links=document.getElementsByClassName("big-buttons");
+        for(var i=0;i<links.length;i++)
+        {
+            links[i].style.backgroundColor="#808080";
+        }
+        /*
         document.getElementById('code').style.backgroundColor="white";
         document.getElementById('design').style.backgroundColor="white";
         document.getElementById('solve').style.backgroundColor="white";
@@ -48,7 +55,7 @@
         document.getElementById('learning').style.backgroundColor="white";
         document.getElementById('perfection').style.backgroundColor="white";
         document.getElementById('communicationSkills').style.backgroundColor="white";
-        document.getElementById('businessSkills').style.backgroundColor="white";
+        document.getElementById('businessSkills').style.backgroundColor="white";*/
         choiceCodes= [];
         localStorage.removeItem('consoleCodes');
     }
@@ -170,7 +177,7 @@
         //console.log(jobsFinalArray);
 
         liMaker();
-
+    }
     //This function displays job list in the results page in a ul list
     function liMaker()
     {

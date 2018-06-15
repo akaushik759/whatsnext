@@ -1,43 +1,247 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>What's Next</title>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- jQuery library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+    <!-- Latest compiled JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <!--Manual typed Javascript-->
     <script type="text/javascript" language="javascript" src="src/script.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">What's Next</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <h1>Preferences</h1>
     <h4>Choose your preference tags</h4>
 
-    <button style="background-color: white"id="code" onclick="changeColor('code')">Coding</button>
-    <button style="background-color: white"id="design" onclick="changeColor('design')">Designing</button>
-    <button style="background-color: white"id="solve" onclick="changeColor('solve')">Problem solving</button>
-    <br>
-    <button style="background-color: white"id="analyse" onclick="changeColor('analyse')">Analysis</button>
-    <button style="background-color: white"id="creative" onclick="changeColor('creative')">Creativity</button>
-    <button style="background-color: white"id="criticalThinking" onclick="changeColor('criticalThinking')">Critical-Thinking</button>
-    <br>
-    <button style="background-color: white"id="studying" onclick="changeColor('studying')">Studying</button>
-    <button style="background-color: white"id="leadership" onclick="changeColor('leadership')">Leadership</button>
-    <button style="background-color: white"id="management" onclick="changeColor('management')">Management</button>
-    <br>
-    <button style="background-color: white"id="allrounder" onclick="changeColor('allrounder')">All Rounder</button>
-    <button style="background-color: white"id="research" onclick="changeColor('research')">Research</button>
-    <button style="background-color: white"id="game" onclick="changeColor('game')">Games</button>
-    <br>
-    <button style="background-color: white"id="teaching" onclick="changeColor('teaching')">Teaching</button>
-    <button style="background-color: white"id="socialMedia" onclick="changeColor('socialMedia')">Social Media</button>
-    <button style="background-color: white"id="hardware" onclick="changeColor('hardware')">Hardware</button>
-    <br>
-    <button style="background-color: white"id="patience" onclick="changeColor('patience')">Patience</button>
-    <button style="background-color: white"id="learning" onclick="changeColor('learning')">Learning</button>
-    <button style="background-color: white"id="perfection" onclick="changeColor('perfection')">Perfection</button>
-    <br>
-    <button style="background-color: white"id="communicationSkills" onclick="changeColor('communicationSkills')">Communication Skills</button>
-    <button style="background-color: white"id="businessSkills" onclick="changeColor('businessSkills')">Business Skills</button>
-    <br>
+
+<div class="container">
+       <div class="row">
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="code" onclick="changeColor('code')">
+                 <div class="ssb-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+                 <h2 class="ssb-title">Coding</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="design" onclick="changeColor('design')">
+                 <div class="ssb-icon"> <i class="fa fa-paint-brush" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Designing</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="solve" onclick="changeColor('solve')">
+                 <div class="ssb-icon"><i class="fa fa-chain" aria-hidden="true"></i></div>
+                 <h2 class="ssb-title">Problem Solving</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="analyse" onclick="changeColor('analyse')">
+                 <div class="ssb-icon"><i class="fa fa-question" aria-hidden="true"></i></div>
+                 <h2 class="ssb-title">Analysis</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="creative" onclick="changeColor('creative')">
+                 <div class="ssb-icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                 <h2 class="ssb-title">Creativity</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="criticalThinking" onclick="changeColor('criticalThinking')">
+                 <div class="ssb-icon"><i class="fa fa-cloud" aria-hidden="true"></i></div>
+                 <h2 class="ssb-title">Critical Thinking</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="studying" onclick="changeColor('studying')">
+                 <div class="ssb-icon"><i class="fa fa-university" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Studying</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="leadership" onclick="changeColor('leadership')">
+                 <div class="ssb-icon"><i class="fa fa-child" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Leadership</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="management" onclick="changeColor('management')">
+                 <div class="ssb-icon"><i class="fa fa-gears" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Management</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="allrounder" onclick="changeColor('allrounder')">
+                 <div class="ssb-icon"><i class="fa fa-adn" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">All Rounder</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="research" onclick="changeColor('research')">
+                 <div class="ssb-icon"><i class="fa fa-flask" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Research</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="game" onclick="changeColor('game')">
+                 <div class="ssb-icon"><i class="fa fa-gamepad" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Games</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="teaching" onclick="changeColor('teaching')">
+                 <div class="ssb-icon"><i class="fa fa-mortar-board" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Teaching</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="socialMedia" onclick="changeColor('socialMedia')">
+                 <div class="ssb-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Social Media</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="hardware" onclick="changeColor('hardware')">
+                 <div class="ssb-icon"><i class="fa fa-laptop" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Hardware</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="patience" onclick="changeColor('patience')">
+                 <div class="ssb-icon"><i class="fa fa-hourglass-1" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Patience</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="learning" onclick="changeColor('learning')">
+                 <div class="ssb-icon"><i class="fa fa-book" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Learning</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="perfection" onclick="changeColor('perfection')">
+                 <div class="ssb-icon"><i class="fa fa-check-circle" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Perfection</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="communicationSkills" onclick="changeColor('communicationSkills')">
+                 <div class="ssb-icon"><i class="fa fa-microphone" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Comm. Skills</h2>
+               </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="square-service-block">
+               <a class="big-buttons" id="businessSkills" onclick="changeColor('businessSkills')">
+                 <div class="ssb-icon"><i class="fa fa-money" aria-hidden="true"></i> </div>
+                 <h2 class="ssb-title">Business Skills</h2>
+               </a>
+            </div>
+          </div>
+
+
+       </div>
+    </div>
+
+
+    <!--<button style="background-color: white"id="code" onclick="changeColor('code')">Coding</button>-->
+
     <h4>Are you done?</h4>
     <button id="yes" onclick="submit()">Yes</button>
     <br>
     <button id="clearAll" onclick="clearPreferences()">Clear All</button>
+
+    <footer class="text-center">
+    <h5>Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by <a href="#" style="color: white">Abhishek</a> </h5>
+    </footer>
+
 </body>
 </html>
