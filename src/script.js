@@ -176,17 +176,14 @@
         jobsScoreFinalArray=jobsScoreFinalArray.slice(0,5);
         //console.log(jobsFinalArray);
 
-        liMaker();
+        cardUpdater();
     }
-    //This function displays job list in the results page in a ul list
-    function liMaker()
+    //This function displays the top 5 jobs in the Careers Page in Bootstrap Cards
+    function cardUpdater()
     {
-        const ul = document.querySelector('ul');
-        for(var jobIndex=0;jobIndex<jobsFinalArray.length;jobIndex++)
-        {
-            //console.log(jobsFinalArray[jobIndex]);
-            const li = document.createElement('li');
-            li.textContent = jobsFinalArray[jobIndex];
-            ul.appendChild(li);
-        }
+        document.getElementById("JOB-1").innerHTML=jobsFinalArray[0];
+        document.getElementById("JOB-2").innerHTML=jobsFinalArray[1];
+        document.getElementById("JOB-3").innerHTML=jobsFinalArray[2];
+        document.getElementById("JOB-4").innerHTML=jobsFinalArray[3];
+        document.getElementById("JOB-5").innerHTML=jobsFinalArray[4];
     }
