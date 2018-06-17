@@ -19,6 +19,25 @@
     "UI/UX Developer":["design","solve","analyse","creative","management","allrounder","patience","perfection","communicationSkills","businessSkills"]
     };
 
+    var jobDetails={
+    "Software Developer":["Software developers are the creative minds behind computer programs","https://collegegrad.com/careers/software-developers"],
+    "Database Administrator":["Database administrators use specialized software to store and organize data","https://collegegrad.com/careers/database-administrators"],
+    "Computer Hardware Engineer":["Computer hardware engineers research, design, develop, and test computer systems and components","https://collegegrad.com/careers/computer-hardware-engineers"],
+    "Computer Systems Analyst":["Computer systems analysts study an organization's current computer systems and procedures, and design solutions","https://collegegrad.com/careers/computer-systems-analysts"],
+    "Computer Network Architect":["Computer network architects design and build data communication networks, including LANs, WANs and Intranets","https://collegegrad.com/careers/computer-network-architects"],
+    "Fullstack Web Developer":["Full-Stack Web Developer works on both the front-end and back-end portions of an application","https://www.sitepoint.com/full-stack-developer/"],
+    "Front-end Web Developer":["Front-end Web Developer works on the core elements of front-end of a web application","https://www.roberthalf.com/blog/salaries-and-skills/hot-job-front-end-web-developer"],
+    "Back-end Web Developer":["Back-end Web Developers are responsible for building out the server side in web applications","https://www.thebalancecareers.com/the-skills-you-need-to-be-a-backend-developer-2071184"],
+    "Mobile Application Developer":["Mobile Application Developer develop mobile applications for various Mobile OS","https://www.simplilearn.com/building-career-in-mobile-app-development-article"],
+    "Machine Learning Engineer":["Machine Learning Engineer's focus goes beyond specifically programming machines to perform specific tasks using AI","https://blog.udacity.com/2016/04/5-skills-you-need-to-become-a-machine-learning-engineer.html"],
+    "Data Engineer":["Data Engineer develop, construct, test and maintain architectures such as databases and large-scale data processing systems","http://www.mastersindatascience.org/careers/data-engineer/"],
+    "Information Security Analyst":["Information security analysts plan and carry out security measures to protect an organization's computer networks and systems","https://collegegrad.com/careers/information-security-analysts"],
+    "Computer and Information Systems Manager":["Computer and Information Systems Manager coordinates and directs an organization's computer-related activities","https://www.thebalancecareers.com/computer-and-information-systems-manager-525998"],
+    "Project Manager":["Project Managers supervise all aspects of a project, coordinating the workforce to ensure work flows smoothly from start to finish","http://www.project-skills.com/whats-the-career-path-of-a-project-manager/"],
+    "Game Developer":[" Game Developers turn the vision of the game artists and designers into reality by utilizing programming and coding languages.","https://www.academicinvest.com/engineering-careers/software-engineering-careers/how-to-become-a-video-game-developer"],
+    "UI/UX Developer":["UX/UI Developers work on creating beautiful interfaces and usually work on Front-end of an application","https://trydesignlab.com/blog/ux-or-ui-which-career-is-best-for-you/"]
+    };
+
     //This function changes the color of the choices upon clickng from white to green and stores them in an array called choiceCodes
     function changeColor(buttonName)
     {
@@ -36,26 +55,7 @@
             links[i].style.backgroundColor="#808080";
         }
         /*
-        document.getElementById('code').style.backgroundColor="white";
-        document.getElementById('design').style.backgroundColor="white";
-        document.getElementById('solve').style.backgroundColor="white";
-        document.getElementById('analyse').style.backgroundColor="white";
-        document.getElementById('creative').style.backgroundColor="white";
-        document.getElementById('criticalThinking').style.backgroundColor="white";
-        document.getElementById('studying').style.backgroundColor="white";
-        document.getElementById('leadership').style.backgroundColor="white";
-        document.getElementById('management').style.backgroundColor="white";
-        document.getElementById('allrounder').style.backgroundColor="white";
-        document.getElementById('research').style.backgroundColor="white";
-        document.getElementById('game').style.backgroundColor="white";
-        document.getElementById('teaching').style.backgroundColor="white";
-        document.getElementById('socialMedia').style.backgroundColor="white";
-        document.getElementById('hardware').style.backgroundColor="white";
-        document.getElementById('patience').style.backgroundColor="white";
-        document.getElementById('learning').style.backgroundColor="white";
-        document.getElementById('perfection').style.backgroundColor="white";
-        document.getElementById('communicationSkills').style.backgroundColor="white";
-        document.getElementById('businessSkills').style.backgroundColor="white";*/
+        document.getElementById('code').style.backgroundColor="white";*/
         choiceCodes= [];
         localStorage.removeItem('consoleCodes');
     }
@@ -181,9 +181,21 @@
     //This function displays the top 5 jobs in the Careers Page in Bootstrap Cards
     function cardUpdater()
     {
-        document.getElementById("JOB-1").innerHTML=jobsFinalArray[0];
-        document.getElementById("JOB-2").innerHTML=jobsFinalArray[1];
-        document.getElementById("JOB-3").innerHTML=jobsFinalArray[2];
-        document.getElementById("JOB-4").innerHTML=jobsFinalArray[3];
-        document.getElementById("JOB-5").innerHTML=jobsFinalArray[4];
+        var jobTitleIds=["JOB-1-title","JOB-2-title","JOB-3-title","JOB-4-title","JOB-5-title"];
+        var jobDetailsIds=["JOB-1-details","JOB-2-details","JOB-3-details","JOB-4-details","JOB-5-details"];
+        var jobLinkIds=["JOB-1-link","JOB-2-link","JOB-3-link","JOB-4-link","JOB-5-link"];
+
+        for(var i=0;i<jobsFinalArray.length;i++)
+        {
+            var currentJob=jobsFinalArray[i];
+            document.getElementById(jobTitleIds[i]).innerHTML=currentJob;
+            for(var job in jobDetails)
+            {
+                if(job==currentJob)
+                {
+                    document.getElementById(jobDetailsIds[i]).innerHTML=jobDetails[job][0];
+                    document.getElementById(jobLinkIds[i]).setAttribute('href', jobDetails[job][1]);
+                }
+            }
+        }
     }

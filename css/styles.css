@@ -78,7 +78,7 @@ h2.ssb-title {
     /* Set black background color, white text and some padding */
 
     .footer {
-   position: fixed;
+   position: relative;
    overflow: hidden;
    left: 0;
    bottom: 0;
@@ -87,7 +87,7 @@ h2.ssb-title {
    background-color: black;
    color: white;
    padding: 15px;
-   height: 50px;
+   height: 90px;
    text-align: center;
 }
 
@@ -139,6 +139,7 @@ h1.heading {
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     transition: box-shadow .25s;
+    overflow: hidden;
 }
 .card:hover {
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
