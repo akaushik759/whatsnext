@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,12 +28,13 @@
 
     <!--Manual typed Javascript-->
     <script type="text/javascript" language="javascript" src="src/script.js"></script>
+    <script type="text/javascript" language="javascript" src="src/viewportchecker.js"></script>
 </head>
-<body onload="updateJobs()">
+<body onload="updateJobs()" >
 
  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">What's Next</a>
+  <a class="navbar-brand" style="color: white">What's Next</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -52,25 +54,25 @@
   </div>
 </nav>
 
-<div class="text-center" style="padding-top: 5%; padding-bottom: 5%">
-  <h1>Possible Career Options</h1>
+<div class="text-center" style="padding-top: 5%; padding-bottom: 5%;background-color: #ffe54a">
+  <h4 class="heading"><b> Possible Career Options</b></h4>
   <ul></ul>
 </div>
 
-<section class="wrapper">
+<section class="wrapper" style="background-color: #f0eee2">
   <div class="container-fostrap">
     <div class="content">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <a class="img-card" href="#">
+              <a class="job-card" href="#">
                             <img src="images/1.png" /></a>
               <div class="card-content">
                 <h4 class="card-title">
                   <a href="" id="JOB-1-title"></a>
                 </h4>
-                <p class="" id="JOB-1-details"></p>
+                <p class="card-details" id="JOB-1-details"></p>
               </div>
               <div class="card-read-more">
                 <a href="#" class="btn btn-link btn-block" id="JOB-1-link">Read More</a>
@@ -79,13 +81,13 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <a class="img-card" href="#">
+              <a class="job-card" href="#">
                             <img src="images/2.png" /></a>
               <div class="card-content">
                 <h4 class="card-title">
                   <a href="#" id="JOB-2-title"></a>
                 </h4>
-                <p class="" id="JOB-2-details"></p>
+                <p class="card-details" id="JOB-2-details"></p>
               </div>
               <div class="card-read-more">
                 <a href="#" class="btn btn-link btn-block" id="JOB-2-link">Read More</a>
@@ -94,13 +96,15 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <a class="img-card" href="#">
+              <a class="job-card" href="#">
                             <img src="images/3.png" /></a>
               <div class="card-content">
                 <h4 class="card-title">
                   <a href="#" id="JOB-3-title"></a>
                 </h4>
-                <p class="" id="JOB-3-details"></p>
+                <div class="card-details">
+                <p id="JOB-3-details"></p>
+                </div>
               </div>
               <div class="card-read-more">
                 <a href="#" class="btn btn-link btn-block" id="JOB-3-link">Read More</a>
@@ -109,13 +113,15 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <a class="img-card" href="#">
+              <a class="job-card" href="#">
                             <img src="images/4.png" /></a>
               <div class="card-content">
                 <h4 class="card-title">
                   <a href="#" id="JOB-4-title"></a>
                 </h4>
-                <p class="" id="JOB-4-details"></p>
+                <div class="card-details">
+                <p id="JOB-4-details"></p>
+                </div>
               </div>
               <div class="card-read-more">
                 <a href="#" class="btn btn-link btn-block" id="JOB-4-link">Read More</a>
@@ -124,15 +130,15 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <a class="img-card" href="#">
+              <a class="job-card" href="#">
                             <img src="images/5.png" /></a>
               <div class="card-content">
                 <h4 class="card-title">
                   <a href="#" id="JOB-5-title"></a>
                 </h4>
-                <p class="" id="JOB-5-details">
-
-                </p>
+                <div class="card-details">
+                <p id="JOB-5-details"></p>
+                </div>
               </div>
               <div class="card-read-more">
                 <a href="#" class="btn btn-link btn-block" id="JOB-5-link">Read More</a>
@@ -145,14 +151,31 @@
   </div>
 </section>
 
-<div class="text-center" style="padding-top: 2%; padding-bottom: 5%">
+<div class="text-center" style="padding-top: 2%; padding-bottom: 5%; background-color: #ffe54a">
     <button type="button" id="back" onclick="window.history.go(-1); return false;" class="btn btn-primary">Back</button>
 </div>
 
 <div class="text-center footer">
-    <a href="#" style="color: white"><p style="font-size: 1.2vw">Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
-    <div style="font-size: 0.8vw">© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
+    <a href="about.html#aboutme" style="color: white"><p>Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
+    <div>© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
 </div>
 
+<!--For scroll up animation thing-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.card').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.heading').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.btn').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+});
+</script>
 </body>
 </html>

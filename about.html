@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +28,12 @@
 
     <!--Manual typed Javascript-->
     <script type="text/javascript" language="javascript" src="src/script.js"></script>
+    <script type="text/javascript" language="javascript" src="src/viewportchecker.js"></script>
 </head>
-<body>
+<body style="background-color: #f0eee2">
  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">What's Next</a>
+  <a class="navbar-brand" style="color: white">What's Next</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -50,31 +52,39 @@
     </ul>
   </div>
 </nav>
+<div style="background-color: #b9dced">
 <div class="container">
-    <div class="row" style="padding-top: 5%; padding-bottom: 5%">
+    <div class="row" style="padding-top: 5%; padding-bottom: 5% " >
         <div class="col-md-12 text-center">
-            <h2>Hey there! Nice to meet you</h2>
+            <h2 class="heading" style="color: #ff007d"><b>Hey there!</b></h2><br><h2 class="heading"> Nice to meet you</h2>
         </div>
     </div>
 
-    <div class="card" style="margin-bottom: 5%; margin-top: 5%">
+    <div class="card" style="margin-bottom: 5%; margin-top: 5%; background-color: #ffe54a">
         <div class="card-body">
             <h4 class="card-title">About What's Next</h4>
             <p class="card-text">Quite often students have a liking for a stream as a whole but are left clueless when they see the vast sub-divisions aka career paths present within their preferred choice of stream. Here What's Next comes into picture. It takes your choice of preference tags and shows you the best career paths according to your liking.<br><br><b>No more worrying about which career to choose, sit back on your bean bags, sipping your coffee while we do the thinking for you!</b></p>
         </div>
     </div>
-    <hr>
-    <div class="row" style="padding-top: 5%;">
+<br>
+<hr>
+</div>
+</div>
+
+<div style="background-color: #f0eee2">
+<div class="container">
+
+    <div class="row" style="padding-top: 5%;" id="aboutme">
         <div class="col-md-12 text-center">
-            <h2>About Me</h2>
+            <h2 class="justforanimation"><b>About Me</b></h2>
         </div>
     </div>
     <div class="row" style="margin-top: 5%; margin-bottom: 5%">
-            <div class="card mx-auto" style="width:300px; height: 400px">
+            <div class="img-card mx-auto">
                 <img class="card-img-top" src="images/Abhishek.jpg" alt="Card image" style="width:100%">
             </div>
     </div>
-    <div class="card">
+    <div class="card" style="background-color: #ffe54a">
         <div class="card-body">
             <h4 class="card-title">Abhishek Kaushik</h4>
             <p class="card-text">I am a Sophomore student currently pursuing Computer Science Engineering. Having been introduced to programming at an early age, I had fallen in love with it early. Currently I am learning JavaScript and for practice I am working on a few projects as coding is not about reading rather it's about actually "writing" code. Previously, I messed with Mobile App Development and created a few simple apps but realised it didn't strike the chords of my heart *wink wink*. Hence, I am currently getting my hands dirty with Web Development and I am absolutely loving it.<br><br>Apart from that I am a startup enthusiast too and have started some initiatives, to know more about them you can connect to me on different networking platforms</p>
@@ -85,11 +95,37 @@
             <a href="mailto:kaushikdeveloper759@gmail.com?Subject=Hello%20again" class="fa fa-envelope" style="font-size:24px; padding:2%"></a>
         </div>
     </div>
-    <hr>
+    <br>
+</div>
 </div>
 <div class="text-center footer">
-    <a href="#" style="color: white"><p style="font-size: 1.2vw">Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
-    <div style="font-size: 0.8vw">© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
+    <a href="about.html#aboutme" style="color: white"><p>Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
+    <div>© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
 </div>
+<!--For scroll up animation thing-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.card').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.img-card').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.heading').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.btn').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.justforanimation').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+});
+</script>
 </body>
 </html>

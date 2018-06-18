@@ -42,7 +42,7 @@
     function changeColor(buttonName)
     {
         //document.getElementsByClassName("square-service-block").style.backgroundColor="#FFFFFF";
-        document.getElementById(buttonName).style.backgroundColor="green";
+        document.getElementById(buttonName).style.backgroundColor="#ff007d";
         choiceCodes.push(buttonName);
     }
 
@@ -52,7 +52,7 @@
         var links=document.getElementsByClassName("big-buttons");
         for(var i=0;i<links.length;i++)
         {
-            links[i].style.backgroundColor="#808080";
+            links[i].style.backgroundColor="#1c60ff";
         }
         /*
         document.getElementById('code').style.backgroundColor="white";*/

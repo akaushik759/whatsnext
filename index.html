@@ -12,8 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="src/viewportchecker.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- jQuery library -->
@@ -28,7 +30,7 @@
 <body>
  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">What's Next</a>
+  <a class="navbar-brand" style="color: white">What's Next</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -48,16 +50,16 @@
   </div>
 </nav>
 
-<div class="text-center" style="padding-top: 5%; padding-bottom: 5%">
-    <h1>Preferences</h1>
-    <h4>Choose your preference tags</h4>
+<div class="text-center" style="padding-top: 5%; padding-bottom: 5%;background: #ffe54a;">
+    <h4 class="heading"><b> Preferences </b></h4>
+    <h4 class="heading">Choose your preference tags</h4>
 </div>
 
 
-
+<div style="background-color: #f0eee2;">
 <div class="container">
        <div class="row">
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="code" onclick="changeColor('code')">
                  <div class="ssb-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
@@ -66,7 +68,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="design" onclick="changeColor('design')">
                  <div class="ssb-icon"> <i class="fa fa-paint-brush" aria-hidden="true"></i> </div>
@@ -75,7 +77,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="solve" onclick="changeColor('solve')">
                  <div class="ssb-icon"><i class="fa fa-chain" aria-hidden="true"></i></div>
@@ -84,7 +86,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="analyse" onclick="changeColor('analyse')">
                  <div class="ssb-icon"><i class="fa fa-question" aria-hidden="true"></i></div>
@@ -93,7 +95,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="creative" onclick="changeColor('creative')">
                  <div class="ssb-icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
@@ -102,7 +104,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="criticalThinking" onclick="changeColor('criticalThinking')">
                  <div class="ssb-icon"><i class="fa fa-cloud" aria-hidden="true"></i></div>
@@ -111,7 +113,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="studying" onclick="changeColor('studying')">
                  <div class="ssb-icon"><i class="fa fa-university" aria-hidden="true"></i> </div>
@@ -120,7 +122,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="leadership" onclick="changeColor('leadership')">
                  <div class="ssb-icon"><i class="fa fa-child" aria-hidden="true"></i> </div>
@@ -129,7 +131,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="management" onclick="changeColor('management')">
                  <div class="ssb-icon"><i class="fa fa-gears" aria-hidden="true"></i> </div>
@@ -138,7 +140,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="allrounder" onclick="changeColor('allrounder')">
                  <div class="ssb-icon"><i class="fa fa-adn" aria-hidden="true"></i> </div>
@@ -147,7 +149,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="research" onclick="changeColor('research')">
                  <div class="ssb-icon"><i class="fa fa-flask" aria-hidden="true"></i> </div>
@@ -156,7 +158,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="game" onclick="changeColor('game')">
                  <div class="ssb-icon"><i class="fa fa-gamepad" aria-hidden="true"></i> </div>
@@ -165,7 +167,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="teaching" onclick="changeColor('teaching')">
                  <div class="ssb-icon"><i class="fa fa-mortar-board" aria-hidden="true"></i> </div>
@@ -174,7 +176,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="socialMedia" onclick="changeColor('socialMedia')">
                  <div class="ssb-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i> </div>
@@ -183,7 +185,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="hardware" onclick="changeColor('hardware')">
                  <div class="ssb-icon"><i class="fa fa-laptop" aria-hidden="true"></i> </div>
@@ -192,7 +194,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="patience" onclick="changeColor('patience')">
                  <div class="ssb-icon"><i class="fa fa-hourglass-1" aria-hidden="true"></i> </div>
@@ -201,7 +203,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="learning" onclick="changeColor('learning')">
                  <div class="ssb-icon"><i class="fa fa-book" aria-hidden="true"></i> </div>
@@ -210,7 +212,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="perfection" onclick="changeColor('perfection')">
                  <div class="ssb-icon"><i class="fa fa-check-circle" aria-hidden="true"></i> </div>
@@ -219,7 +221,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="communicationSkills" onclick="changeColor('communicationSkills')">
                  <div class="ssb-icon"><i class="fa fa-microphone" aria-hidden="true"></i> </div>
@@ -228,7 +230,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <div class="square-service-block">
                <a class="big-buttons" id="businessSkills" onclick="changeColor('businessSkills')">
                  <div class="ssb-icon"><i class="fa fa-money" aria-hidden="true"></i> </div>
@@ -240,11 +242,12 @@
 
        </div>
     </div>
+</div>
 
 
     <!--<button style="background-color: white"id="code" onclick="changeColor('code')">Coding</button>-->
-<div class="text-center" style="padding-top: 2%; padding-bottom: 5%">
-    <h4>Are you done ?</h4>
+<div class="text-center" style="padding-top: 2%; padding-bottom: 5%;background-color: #ffe54a;">
+    <h4 class="heading">Are you done ?</h4>
     <br>
     <button type="button" id="yes" onclick="submit()" class="btn btn-primary">Yes</button>
     <button type="button" id="clearAll" onclick="clearPreferences()" class="btn btn-primary">Clear All</button>
@@ -252,9 +255,26 @@
 
 
 <div class="text-center footer">
-    <a href="#" style="color: white"><p style="font-size: 1.2vw">Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
-    <div style="font-size: 0.8vw">© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
+    <a href="about.html#aboutme" style="color: white"><p>Made with <i class="fa fa-heartbeat" style="color: #FF3333"></i> by Abhishek</a> </p>
+    <div>© What's Next | 2018<br> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><b>CC BY-NC-ND 4.0</b> International License</a>.</div>
 </div>
 
+<!--For scroll up animation thing-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.square-service-block').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.heading').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+    jQuery('.btn').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
+        offset: 100
+       });
+});
+</script>
 </body>
 </html>
