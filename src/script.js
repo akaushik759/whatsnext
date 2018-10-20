@@ -42,7 +42,7 @@
     function changeColor(buttonName)
     {
         //document.getElementsByClassName("square-service-block").style.backgroundColor="#FFFFFF";
-        document.getElementById(buttonName).style.backgroundColor="#ff007d";
+        document.getElementById(buttonName).style.backgroundColor="#a442f4";
         choiceCodes.push(buttonName);
     }
 
